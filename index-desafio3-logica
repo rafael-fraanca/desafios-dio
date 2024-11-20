@@ -1,0 +1,16 @@
+class AventuraHeroi {
+    constructor(nome, idade, tipoHeroi, ataque) {
+        this.nome = nome;
+        this.idade = idade;
+        this.tipoHeroi = tipoHeroi;
+        this.ataque = ataque;
+    }
+
+    escrever() {
+        console.log(`O ${this.tipoHeroi} atacou usando ${this.ataque}`);
+    }
+}
+
+const heroi = new AventuraHeroi("Harry Potter", 215, "Mago", "Magia");
+
+heroi.escrever();
